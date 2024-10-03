@@ -7,7 +7,16 @@ dotenv.config();
 
 // TODO: Complete the WeatherService class
 class WeatherService {
-  // TODO: Define the baseURL, API key, and city name properties
+  baseURL: string
+  apiKey: string
+  cityName: string
+  
+  constructor(baseURL: string, apiKey: string, cityName: string) {
+    this.baseURL = baseURL,
+    this.apiKey = apiKey,
+    this.cityName = cityName
+
+  }
   // TODO: Create fetchLocationData method
   // private async fetchLocationData(query: string) {}
   // TODO: Create destructureLocationData method
